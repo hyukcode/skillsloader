@@ -1,0 +1,23 @@
+[project]
+name = "skill-loader"
+version = "0.1.0"
+description = "Sync AI agent skills to Claude Code, Codex and Cursor"
+requires-python = ">=3.9"
+
+dependencies = [
+    "typer>=0.12"
+]
+
+
+[project.scripts]
+
+skill-loader = "skills_loader.cli:app"
+
+
+[build-system]
+
+requires = [
+    "setuptools>=68"
+]
+
+build-backend = "setuptools.build_meta"
